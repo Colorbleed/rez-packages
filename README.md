@@ -6,7 +6,7 @@ _Note that this currently only includes packages for **Windows** see [Different 
 
 **WIP** 
 
-This is a work in progress repository under development. At this stage I would not using these in production without thorough testing.
+This is a work in progress repository under development. At this stage I would not recommend using these in production without thorough testing.
 However, creating tickets for any issues you're facing is very welcome.
 
 
