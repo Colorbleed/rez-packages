@@ -6,8 +6,8 @@ _Note that this currently only includes packages for **Windows** see [Different 
 
 **WIP** 
 
-This is a work in progress and under heavy development repository. 
-Feel free to test and create issues for any issues you're facing, however at this stage I would not using these in production without thorough testing.
+This is a work in progress repository under development. At this stage I would not using these in production without thorough testing.
+However, creating tickets for any issues you're facing is very welcome.
 
 
 ## Quick Start Guide
@@ -39,12 +39,12 @@ The reference packages reference the default installation locations for the appl
 
 #### Different OS implementations
 
-Currently this repository contains **only!** rez-packages that build and distribute the *Windows* variants. This could be expanded to support *Mac OS* and *Linux* however as for us internall there's no rush to support that feel free to submit PRs to implement this behavior.
+Currently this repository contains **only!** rez-packages that build and distribute the **Windows** variants. This could be expanded to support *Mac OS* and *Linux* however as for Colorbleed internally there's no rush to support that feel free to submit PRs to implement this behavior.
 
 #### Missing required packages
 
 In some cases packages require certain packages to be available that are not in this repository, e.g. `7zip`. 
-In those cases we recommend install [`rez-pipz`](https://github.com/mottosso/rez-pipz) and [`rez-scoopz`](https://github.com/mottosso/rez-scoopz) to easily install these packages, so that one can for example do:
+In those cases we recommend installing [`rez-pipz`](https://github.com/mottosso/rez-pipz) and [`rez-scoopz`](https://github.com/mottosso/rez-scoopz) to easily install these packages, so that one can for example do:
 
 ```python
 # Install some dependencies of this repository
@@ -66,4 +66,4 @@ If you're looking for more references on Rez packages here are some other reposi
 
 - https://github.com/UTS-AnimalLogicAcademy/open-source-rez-packages
 - https://github.com/predat/rez-packages
-- [Rez Issue #673: Recipe Repositories](https://github.com/nerdvegas/rez/issues/673) (not a package repository, but shows some thoughts about the future for package repositories)
+- [Rez Issue #673: Recipe Repositories](https://github.com/nerdvegas/rez/issues/673) (not a package repository, but shows some thoughts about the future for Rez package repositories)
