@@ -28,15 +28,12 @@ For other cases we only generate ["reference packages"](https://github.com/motto
 
 #### Build from source
 
-- When building from source the generator is currently forced to build using `Visual Studio 15 2017 Win64` in the `rezbuild.py` scripts for the package.
+- When building from source the generator is currently forced to build using `Visual Studio 15 2017 Win64` in the `rezbuild.py` scripts for the package, for example see [here](https://github.com/Colorbleed/rez-packages/blob/master/googletest/1.10.0/rezbuild.py#L11).
 - When `cmake` is available for the source we build and compile through `cmake`
-
-Packages that did not lend themselves to a simple rez-build are build using simple bash scripts, these can be spotted by the build.sh in the root directory.  These packages require you to set some environment variables in build.sh to specify where packages should be released to.  
 
 #### Reference packages
 
 The reference packages reference the default installation locations for the applications and all the reference package does is set the relevant environment variables for the Application to run as expected.
-
 
 ## Additional notes
 
