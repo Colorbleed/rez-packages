@@ -4,6 +4,11 @@ This is a collection of [Rez](http://nerdvegas.github.io/rez/) packages to help 
 
 _Note that this currently only includes packages for **Windows** see [Different OS implementations](#different-os-implementations)_
 
+**WIP** 
+
+This is a work in progress and under heavy development repository. 
+Feel free to test and create issues for any issues you're facing, however at this stage I would not using these in production without thorough testing.
+
 
 ## Quick Start Guide
 
@@ -12,7 +17,7 @@ _Note that this currently only includes packages for **Windows** see [Different 
 3. `rez build --install` to do a full install of that package.
 4. `rez env {package}` to run an environment with that package, e.g. `rez env maya`
 
-_Note that some package will require 
+_Note that some package will require additional packages to be available to `rez` for building, see [Missing required packages](#missing-required-packages)_
 
 ## Build, install or reference packages
 
