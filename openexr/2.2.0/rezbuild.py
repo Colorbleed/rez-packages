@@ -18,7 +18,7 @@ def build(source_path, build_path, install_path, targets):
     archive = os.path.join(build_path, filename)
     url = "http://download.savannah.nongnu.org/releases/openexr/" + filename
     print("Downloading file: %s" % url)
-    #urllib.request.urlretrieve(url, archive)
+    urllib.request.urlretrieve(url, archive)
     
     # Unzip the source
     print("Unzipping to: %s" % build_path)
