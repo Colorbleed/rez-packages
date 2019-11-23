@@ -12,7 +12,6 @@ build_requires = ['python',
                   'cmake',
                   'openexr-2.2.0'
                   #'hdf5',
-                  #'zlib',
                   #'boost-1.55',
                   #'pyilmbase',
                   #'arnold'
