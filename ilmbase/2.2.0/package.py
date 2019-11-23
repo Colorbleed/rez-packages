@@ -17,6 +17,7 @@ build_requires = ['python',
 def commands():
 
     env.ILMBASE_ROOT = '{root}'
+    env.PATH.append('{root}/lib/')
     env.LD_LIBRARY_PATH.append('{root}/lib/')
     env.PKG_CONFIG_PATH.append('{root}/lib/pkgconfig/')
 

@@ -7,7 +7,7 @@ version = '2.2.0'
 requires = [
             'ilmbase-2.2.0',
             'zlib'
-           ]
+]
 
 # This is important, otherwise the build scripts fail
 # on == in the build folder names.
@@ -22,6 +22,7 @@ build_requires = ['python',
 def commands():
 
     env.PATH.append("{root}/bin/")
+    env.PATH.append("{root}/lib")
     env.LD_LIBRARY_PATH.append("{root}/lib")
     env.PKG_CONFIG_PATH.append("{root}/lib/pkgconfig")
     env.OPENEXR_ROOT = "{root}"
