@@ -16,12 +16,12 @@ def copy_files(src, dest):
     if not os.path.exists(dest):
         os.makedirs(dest)
     
-    for file in files:
+    for src_file in files:
     
-        # Explicitly copy the file
-        dest_file = os.path.join(dest, os.path.basename(file))
-        print("Copying %s -> %s" % (file, dest_file))
-        shutil.copy(file, dest_file)
+        # Explicitly copy to file destination
+        dest_file = os.path.join(dest, os.path.basename(src_file))
+        print("Copying %s -> %s" % (src_file, dest_file))
+        shutil.copyfile(src_file, dest_file)
         
 def copy_directory(src, dest):
     if os.path.isdir(dest):
@@ -42,7 +42,7 @@ def build(source_path, build_path, install_path, targets):
     filename = os.path.basename(url)
     zip_path = os.path.join(build_path, filename)
     print("Downloading file: %s" % url)
-    #urllib.request.urlretrieve(url, zip_path)
+    urllib.request.urlretrieve(url, zip_path)
     
     # Unzip the compiled tbb
     print("Unzipping to: %s" % build_path)
