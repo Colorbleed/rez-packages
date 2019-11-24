@@ -23,13 +23,13 @@ requires = [
 
 def commands():
     global env
-    global requests
+    global request
 
     env.PATH.prepend("{root}/bin")
     env.LD_LIBRARY_PATH.prepend('{root}/lib/')
     env.PATH.prepend("{root}/lib")
     
-    if "maya" in requests:
+    if "maya" in request:
         # Try and get it found before Maya's plug-in path to
         # hopefully force it in front of the built-in Alembic
         # plug-in.
