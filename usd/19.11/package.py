@@ -16,7 +16,7 @@ build_requires = ['python-2',
                   'nasm']
 
 variants = [
-    ['platform-windows', 'PySide']
+    ['platform-windows', 'PySide'],
     ['platform-windows', 'PySide2']
 ]
 
