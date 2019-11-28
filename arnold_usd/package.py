@@ -30,8 +30,12 @@ def commands():
     env.LD_LIBRARY_PATH.prepend('{root}/lib/')  # unix
     env.PATH.prepend("{root}/lib")              # windows
     
-    env.ARNOLD_PLUGIN_PATH.append("{root}/plugin")
+    env.ARNOLD_PLUGIN_PATH.append("{root}/plugin")      # todo: not needed?
+    env.ARNOLD_PLUGIN_PATH.append("{root}/procedural")
     env.PATH.append("{root}/procedural")
+    
+    env.PYTHONPATH.append("{root}/lib/python")
+    env.PXR_PLUGINPATH_NAME.append("{root}/plugin")
     
     # todo: is this needed for mtoa?
     if "maya" in request:
